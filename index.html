@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Gatos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulario de Gatos</h1>
+    <p>Por favor completa todos los campos con la información requerida</p>
+    <form action="#" method="post">
+        <fieldset>
+            <label for="nombre">Ingresa tu nombre: 
+                <input type="text" id="nombre" name="nombre"required>
+            </label>
+            <label for="apellido">Ingresa tu apellido: 
+                <input type="text" id="apellido" name="apellido"required>
+            </label>
+            <label for="email">Ingresa tu email: 
+                <input type="email" id="email" name="email"required>
+            </label>
+            <label for="referencia">¿Como seria tu tipo de gato
+                <select name="referencia" id="referencia">
+                    <option value="">Selecciona una opcion</option>
+                    <option value="1">amistoso</option>
+                    <option value="2">cariñoso</option>
+                    <option value="3">educado</option>
+                    <option value="3">leal</option>
+                    <option value="3">tranquilo</option>
+                    <option value="4">Otro</option>
+                </select>
+               </label>
+        </fieldset>
+        <fieldset>
+            <legend>¿Te gustaria apoyarnos a que la gente sepa que tener gatos no es tan malo?</legend>
+            <label for="tal vez">
+                <input type="radio" name="ta-vez" class="enlinea" checked>tal vez
+            </label>
+            <label for="por supuesto">
+                <input type="radio" name="por-supuesto" class="enlinea" checked>por supuesto
+            </label>
+            <label for="puede ser">
+                <input type="radio" name="puede-ser" class="enlinea" checked>puede ser
+            </label>
+            <label for="no creo">
+                <input type="radio" name="no-creo" class="enlinea" checked>no creo
+            </label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>tipos de Gatos(requerido)</legend>
+            <label for="Gatos">
+                <input type="radio" name="tipo-de-gatos" class="enlinea" checked>gato persa
+            </label>
+            <label for="Gatos">
+                <input type="radio" name="tipo-de-gatos" class="enlinea" checked>gato Azul ruso
+            </label>
+            <label for="Gatos">
+                <input type="radio" name="tipo-de-gatos" class="enlinea" checked>gato naranja
+            </label>
+            <label for="Gatos">
+                <input type="radio" name="tipo-de-gatos" class="enlinea" checked>gato egipsio
+            </label>
+            <label for="Gatos">
+                <input type="radio" name="tipo-de-gatos" class="enlinea" checked>gato Siamés
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="foto">Agrega tu foto de perfil
+                <input type="file" name="foto">
+            </label>
+            <label for="edad">Ingresa tu edad en años
+                <input type="number" name="edad" min="13" max="120">
+            </label>
+            <label for="referencia">¿Como supiste de nosotros?
+            <select name="referencia" id="referencia">
+                <option value="">Selecciona una opcion</option>
+                <option value="1">Amigos</option>
+                <option value="2">Redes sociales</option>
+                <option value="3">Anuncios</option>
+                <option value="4">Otro</option>
+            </select>
+           </label>
+            <label for="mensaje">Ingresa un mensaje:
+                <textarea name="mensaje" id="mensaje" rows="3" cols="30" placeholder="Mensajes"></textarea>
+            </label>
+        </fieldset>
+        <label for="terminos">
+            <input type="checkbox" class="enlinea" name="terminos">
+            Acepto los <a href="#">Terminos y condiciones</a>
+        </label>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
